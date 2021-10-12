@@ -1,0 +1,152 @@
+section.cart-page {
+  background-color: #f1f2f4;
+  padding: 50px 0 100px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.cart-page .cart-header,
+.cart-page .cart-content,
+.cart-page .cart-footer,
+.cart-page .checkout {
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  box-shadow: 0 3px 4px -4px #9c9c9c;
+}
+
+.cart-page .cart-header h2 {
+  font-size: 25px;
+}
+
+
+
+.cart-content .book-info a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.cart-content .book-info a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.cart-content .book-info p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.cart-content .book-info a i {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.cart-content .book-info a i:hover {
+  color: #007bff;
+}
+
+.book-quantity {
+  align-items: center;
+}
+
+.book-quantity .quantity-box {
+  width: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  border-right: 0;
+  border-left: 0;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  border-radius: .25rem;
+  padding: 1px;
+}
+
+.book-quantity .quantity-btn-plus,
+.book-quantity .quantity-btn-minus {
+  background-color: #e9ecef;
+  width: 40px;
+  text-align: center;
+  padding: 1px;
+}
+
+.book-quantity .quantity-btn-plus:focus,
+.book-quantity .quantity-btn-minus:focus {
+  box-shadow: none;
+}
+
+.book-quantity .quantity-btn-plus i,
+.book-quantity .quantity-btn-minus i {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.price-info .single-price {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart-footer .gift-btn {
+  color: #87298f;
+  border: 1px solid #87298f;
+  border-radius: 3px;
+  padding: 10px 15px;
+  box-shadow: 0 3px 6px -4px #a2a2a2;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.cart-footer .gift-btn:hover {
+  color: #ffffff;
+  border: 1px solid #87298f;
+  background-color: #87298f;
+}
+
+.cart-footer .shipping-btn {
+  color: #ffffff;
+  border: 1px solid #ffad33;
+  border-radius: 3px;
+  padding: 10px 15px;
+  box-shadow: 0 3px 6px -4px #a2a2a2;
+  font-weight: 500;
+  background-color: #f90;
+}
+
+.cart-footer .shipping-btn:hover {
+  background-color: #ffad33 radial-gradient(circle, transparent 1%, #ff9900 1%) center/15000%;
+}
+
+.checkout .checkout-sidebar-header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.checkout .checkout-sidebar-header h2 {
+  font-size: 20px;
+  color: #333333;
+  padding-bottom: 10px;
+}
+
+.alert {
+  display: none;
+}
+
+.alert p {
+  display: inline-block;
+}
+
+.alert p a {
+  margin-left: 10px;
+  font-weight: 900;
+}
+
+.alert p a:hover {
+  text-decoration: none;
+}

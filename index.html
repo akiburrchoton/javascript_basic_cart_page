@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- fontawesome CSS -->
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+        
+
+        <title>Cart Page</title>
+    </head>
+
+    <body>
+        <!-- checkOut part -->
+        <section class="cart-page">
+            <div class="container">
+                <div class="row">
+                    <!-- checkout info start -->
+                    <div class="col-8">
+                        <!-- cart header  start-->
+                        <div class="cart-header">
+                            <div class="nav justify-content-between">
+                                <h2>My Cart Items</h2>
+                                <h2>
+                                    Cart Total: <span id="cart-total">700</span>TK.
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- cart header end -->
+
+                        <!-- cart content start -->
+                        <div class="cart-content">
+                            <!-- single item start -->
+                            <div class="cart-item my-3" id="cart-item1">
+                                <div class="row align-items-center">
+                                    <!-- Book Cover Section start-->
+                                    <div class="col-2">
+                                        <div class="book-cover">
+                                            <img
+                                                class="img-fluid"
+                                                src="images/cart-img-1.jpg"
+                                                alt="cart-img-2"
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- Book Cover Section end -->
+                                    <!-- Book Info Section start -->
+                                    <div class="col-4">
+                                        <div class="book-info">
+                                            <a href="#" class="book-name"
+                                                >চল্</a
+                                            >
+                                            <p>অন্তিক মাহমুদ</p>
+                                            <a href="#" id="rmv-btn1"
+                                                ><i class="fas fa-trash-alt"></i
+                                            ></a>
+                                        </div>
+                                    </div>
+                                    <!-- Book Info Section end -->
+                                    <!-- Book quantity start-->
+                                    <div class="col-4">
+                                        <div class="nav book-quantity">
+                                            <button
+                                                class="btn quantity-btn-minus"
+                                                id="decrement1"
+                                            >
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input
+                                                type="text"
+                                                class="quantity-box"
+                                                id="quantity-box-1"
+                                                value="1"
+                                                disabled
+                                            />
+                                            <button
+                                                class="btn quantity-btn-plus"
+                                                id="increment1"
+                                            >
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Book quantityend-->
+                                    <!-- Books price start-->
+                                    <div class="col-2">
+                                        <div class="price-info">
+                                            <p class="single-price">
+                                                Tk.<span id="price1">200</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Books price end-->
+                                </div>
+                            </div>
+                            <!-- single item end -->
+
+                            <!-- alert massage start  -->
+                            <div
+                                class="alert alert-warning"
+                                id="alert-message1"
+                            >
+                                <strong
+                                    ><i class="fas fa-exclamation"></i
+                                ></strong>
+                                <p>
+                                    চল্ Removed Successfully,<a
+                                        id="alert-link1"
+                                        href="#"
+                                        >Undo</a
+                                    >
+                                </p>
+                                <button type="button" class="close" id="close1">
+                                    ×
+                                </button>
+                            </div>
+                            <!-- alert massage end  -->
+
+                            <!-- single item start -->
+                            <div class="cart-item my-3" id="cart-item2">
+                                <div class="row align-items-center">
+                                    <!-- Book Cover Section start-->
+                                    <div class="col-2">
+                                        <div class="book-cover">
+                                            <img
+                                                class="img-fluid"
+                                                src="images/cart-img-2.jpg"
+                                                alt="cart-img-2"
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- Book Cover Section end -->
+                                    <!-- Book Info Section start -->
+                                    <div class="col-4">
+                                        <div class="book-info">
+                                            <a href="#" class="book-name"
+                                                >মাসুদ রানা -৪৬৫ : কাউন্ট
+                                                কোবরা</a
+                                            >
+                                            <p>কাজী মায়মুর হোসেন</p>
+                                            <a href="#" id="rmv-btn2"
+                                                ><i class="fas fa-trash-alt"></i
+                                            ></a>
+                                        </div>
+                                    </div>
+                                    <!-- Book Info Section end -->
+                                    <!-- Book quantity start-->
+                                    <div class="col-4">
+                                        <div class="nav book-quantity">
+                                            <button
+                                                class="btn quantity-btn-minus"
+                                                id="decrement2"
+                                            >
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input
+                                                type="text"
+                                                class="quantity-box"
+                                                id="quantity-box-2"
+                                                value="1"
+                                                disabled
+                                            />
+                                            <button
+                                                class="btn quantity-btn-plus"
+                                                id="increment2"
+                                            >
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Book quantityend-->
+                                    <!-- Books price start-->
+                                    <div class="col-2">
+                                        <div class="price-info">
+                                            <p class="single-price">
+                                                Tk.<span id="price2">500</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Books price end-->
+                                </div>
+                            </div>
+                            <!-- single item end -->
+
+                            <!-- alert massage start  -->
+                            <div
+                                class="alert alert-warning"
+                                id="alert-message2"
+                            >
+                                <strong
+                                    ><i class="fas fa-exclamation"></i
+                                ></strong>
+                                <p>
+                                    মাসুদ রানা -৪৬৫ : কাউন্ট কোবরা Removed
+                                    Successfully,<a id="alert-link2" href="#"
+                                        >Undo</a
+                                    >
+                                </p>
+                                <button type="button" class="close" id="close2">
+                                    ×
+                                </button>
+                            </div>
+                            <!-- alert massage end  -->
+                        </div>
+                        <!-- cart content end -->
+
+                        <!-- cart-footer start -->
+                        <div class="cart-footer">
+                            <div
+                                class="nav justify-content-end cart-footer-btn"
+                            >
+                                <button class="btn gift-btn">
+                                    Order as a Gift
+                                </button>
+                                <button class="btn shipping-btn">
+                                    Go to Shipping Page
+                                </button>
+                            </div>
+                        </div>
+                        <!-- cart-footer end -->
+                    </div>
+                    <!-- checkout info start -->
+
+                    <!-- Checkout sidebar start -->
+                    <div class="col-4">
+                        <div class="checkout">
+                            <div id="checkout-sidebar" class="check-sidebar">
+                                <div class="checkout-sidebar-header">
+                                    <h2>Checkout Summary</h2>
+                                </div>
+                                <div class="country my-3">
+                                    <select
+                                        name="clientCountry"
+                                        class="custom-select"
+                                    >
+                                        <option value="1" selected="">
+                                            বাংলাদেশ
+                                        </option>
+                                        <option value="2">অস্ট্রেলিয়া</option>
+                                    </select>
+                                </div>
+
+                                <div class="checkout-sidebar-content">
+                                    <div class="payment-breakdown">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Subtotal</td>
+                                                    <td
+                                                        class="text-right"
+                                                    >
+                                                        <span id="subtotal">700</span>TK. 
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Shipping</td>
+                                                    <td
+                                                        class="text-right"
+                                                    >
+                                                    <span id="shipping">50</span>TK. 
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total</td>
+                                                    <td
+                                                        class="text-right"
+                                                    >
+                                                        <span id="total">750</span>TK. 
+                                                    </td>
+                                                </tr>
+
+                                                <tr id="payabletr">
+                                                    <td
+                                                        class="font-weight-bold"
+                                                    >
+                                                        Payable Total
+                                                    </td>
+                                                    <td
+                                                        class="
+                                                            text-right
+                                                            font-weight-bold
+                                                        "
+                                                        
+                                                    >
+                                                        <span id="payable">750</span>TK. 
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--End checkout sidebar content -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End checkout-sidebar -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Custom JS -->
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
