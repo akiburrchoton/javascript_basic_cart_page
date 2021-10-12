@@ -8,7 +8,7 @@ You can visit here: https://akiburrchoton.github.io/javascript_basic_cart_page/
 Features - 
 
 Date - 12.10.2021
-- Incrment Decrement
+- Increment Decrement
 - Adjusitng Price based on the number of books
 - Adjusting all the prices
 - Adjusting prices after removing and undoing the books
