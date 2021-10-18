@@ -67,6 +67,7 @@ rmvBtnOne.addEventListener('click', function () {
     }, 5000);    
 });
 
+
 // ! Remove ALert Message for Book One
 closeBtnOne.addEventListener('click', function () {
     alertOne.style.display = 'none';
