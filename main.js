@@ -64,7 +64,7 @@ rmvBtnOne.addEventListener('click', function () {
     // ! Remove the alert after 5 seconds
     setTimeout(() => {
         alertOne.style.display = 'none';
-    }, 50000);    
+    }, 5000);    
 });
 
 // ! Remove ALert Message for Book One
@@ -133,7 +133,7 @@ rmvBtnTwo.addEventListener('click', function () {
     // ! Remove the alert after 5 seconds
     setTimeout(() => {
         alertTwo.style.display = 'none';
-    }, 50000); 
+    }, 5000); 
 });
 
 // ! Remove ALert Message for Book Two
