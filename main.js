@@ -29,6 +29,8 @@ const country = document.querySelector('.custom-select');
 const shipping = document.querySelector('#shipping');
 const shippingCost = 50;
 
+var storePriceOne = 0;
+var storePriceTwo = 0;
 
 // if (country[0].value == 1){
 //     console.log('BD');
@@ -47,6 +49,7 @@ const shippingCost = 50;
 
 // ! Remove Event for Book One
 rmvBtnOne.addEventListener('click', function () {
+    storeOne = Number(bookPriceOne.innerText);
     // * Subtract the price of the Books
     const subtotalAfterRmv = Number(subTotal.innerText) - Number(bookPriceOne.innerText);
     const totalAfterRmv = Number(total.innerText) - Number(bookPriceOne.innerText);
@@ -67,10 +70,12 @@ rmvBtnOne.addEventListener('click', function () {
 // ! Remove ALert Message for Book One
 closeBtnOne.addEventListener('click', function () {
     alertOne.style.display = 'none';
+    itemOne.remove();
 });
 
 // * Undo Event for Book One When Undo Button One is Clicked
 undoBtnOne.addEventListener('click', function () {
+    bookPriceOne.innerText = storeOne;
     const subtotalAfterUndo = Number(subTotal.innerText) + Number(bookPriceOne.innerText);
     const totalAfterUndo = Number(total.innerText) + Number(bookPriceOne.innerText);
 
@@ -112,6 +117,9 @@ decrementBtnOne.addEventListener('click', function () {
 
 // ! Remove Event for Book Two
 rmvBtnTwo.addEventListener('click', function () {
+    storeTwo = Number(bookPriceTwo.innerText);
+    itemTwo.style.display = 'none';
+    alertTwo.style.display = 'block';
     // * Subtract the price of the Books
     const subtotalAfterRmv = Number(subTotal.innerText) - Number(bookPriceTwo.innerText);
     const totalAfterRmv = Number(total.innerText) - Number(bookPriceTwo.innerText);
@@ -120,8 +128,7 @@ rmvBtnTwo.addEventListener('click', function () {
     payableTotal.innerText = totalAfterRmv;
     cartTotal.innerText = totalAfterRmv;
 
-    itemTwo.style.display = 'none';
-    alertTwo.style.display = 'block';
+    
 
     // ! Remove the alert after 5 seconds
     setTimeout(() => {
@@ -132,10 +139,12 @@ rmvBtnTwo.addEventListener('click', function () {
 // ! Remove ALert Message for Book Two
 closeBtnTwo.addEventListener('click', function () {
     alertTwo.style.display = 'none';
+    itemTwo.remove();
 });
 
 // * Undo Event for Book One When Undo Button Two is Clicked
-undoBtnTwo.addEventListener('click', function () {   
+undoBtnTwo.addEventListener('click', function () { 
+    bookPriceTwo.innerText = storeTwo;  
     const subtotalAfterUndo = Number(subTotal.innerText) + Number(bookPriceTwo.innerText);
     const totalAfterUndo = Number(total.innerText) + Number(bookPriceTwo.innerText);
 
@@ -178,6 +187,13 @@ decrementBtnTwo.addEventListener('click', function () {
 
 // * Calculate the Subtotal and Display in Subtotal
 function calculation() {
+
+    if(itemOne.style.display == 'none'){
+        bookPriceOne.innerText = 0;
+    }
+    if(itemTwo.style.display == 'none'){
+        bookPriceTwo.innerText = 0;
+    }
     const subTotalPrice = Number(bookPriceOne.innerText) + Number(bookPriceTwo.innerText);
     const totalPrice = subTotalPrice + shippingCost; 
 
